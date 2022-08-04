@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>CheckList Diário</title>
 </head>
 
@@ -15,7 +16,7 @@
             <!-- Container imagens -->
             <div class="content-img">
                 <img src="img/logo_TDGI_home_2.png" alt="TDGI">
-                <img style="height: 60px;" src="img/cropped-logo-tmkt-insta.png" alt="TMKT">
+                <img style="height: 60px; padding-top: 20px;" src="img/cropped-logo-tmkt-insta.png" alt="TMKT">
             </div>
             <!-- End Container imagens -->
             <!-- Container form -->
@@ -26,7 +27,7 @@
                     </nav>
                     <div class="input">
                         <label for="">Data</label>
-                        <input id="date" name="data" type="text">
+                        <input id="date" name="data" type="text" placeholder="Insira a Data">
                     </div>
                     <div class="input">
                         <label for="">Hora Inicio</label>
@@ -40,8 +41,9 @@
                         <label for="">Ass. Técnico</label>
                         <input id="assinatura" name="assinatura_tecnico" placeholder='Assinatura Técnico' type="text">
                     </div>
-                    <div id="btn"></div>
-                    <button type="submit">Enviar</button>
+                    <div id="btn" class="content-btn">
+                        <a href="#" class="BUTTON_UVV">Inicializar</a>        
+                    </div>
                 </form>
             </div>
             <!-- End Container form -->
@@ -53,10 +55,7 @@
     <script>
         $(document).ready(function () {
             let data = $("#date");
-
             data.mask('00-00-0000');
-
-
         });
     </script>
 </body>

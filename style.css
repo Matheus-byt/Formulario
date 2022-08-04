@@ -22,7 +22,7 @@ main {
     width: 500px;
     min-width: 320px;
     padding: 10px;
-    box-shadow: 5px 5px 15px #6492c09c;
+    box-shadow: 5px 5px 15px #0e161dd8;
     margin: auto;
     margin-top: 10%;
     border-radius: 10px;
@@ -41,8 +41,9 @@ body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right, #004aad, #002d68);
-
-
+    background-image: url(img/wizard-v4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -55,6 +56,7 @@ h2 {
     color: #fff;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #0e161dd8;
 }
 
 input {
@@ -66,3 +68,46 @@ input {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.BUTTON_UVV {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #004aad, #002d68);
+    background-image: -moz-linear-gradient(top, #004aad, #002d68);
+    background-image: -ms-linear-gradient(top, #004aad, #002d68);
+    background-image: -o-linear-gradient(top, #004aad, #002d68);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    text-shadow: 2px 4px 16px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 92%;
+    transform: 0.2s !important;
+ }
+ 
+ .BUTTON_UVV:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transform: 0.2s !important;
+ }
+
+ .content-btn{
+    width: 95%;
+    min-width: 200px;
+ }
