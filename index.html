@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>CheckList Diário</title>
+    <title>TDGI - CheckList Diário</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <!-- End Container imagens -->
             <!-- Container form -->
             <div id="form">
-                <form action="">
+                <form name="form-login" method="POST">
                     <nav class="title-form">
                         <h2 class="title">CheckList Diário</h2>
                     </nav>
@@ -42,7 +42,7 @@
                         <input id="assinatura" name="assinatura_tecnico" placeholder='Assinatura Técnico' type="text">
                     </div>
                     <div id="btn" class="content-btn">
-                        <a href="#" class="BUTTON_UVV">Inicializar</a>        
+                        <button type="submit" id="btn-register" class="BUTTON_UVV">Inicializar</button>        
                     </div>
                 </form>
             </div>
@@ -52,6 +52,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js">
     </script>
+    <script src="script.js"></script>
     <script>
         $(document).ready(function () {
             let data = $("#date");
