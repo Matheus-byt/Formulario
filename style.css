@@ -2,12 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
+
+main {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -15,7 +16,8 @@ main{
     justify-content: center;
     align-items: center;
 }
-.content{
+
+.content {
     background-color: white;
     width: 500px;
     min-width: 320px;
@@ -24,23 +26,43 @@ main{
     margin: auto;
     margin-top: 10%;
     border-radius: 10px;
+    display: grid;
+    justify-content: center;
 }
 
-.content-img{
+.content-img {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right, #004aad, #002d68);
-    
+    background: linear-gradient(to right, #004aad, #002d68);
+
 
 }
 
-h2{
+h2 {
     text-align: center;
+}
+
+.title-form {
+    width: 100%;
+    background: linear-gradient(to right, #004aad, #002d68);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 95%;
+    min-width: 200px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid rgba(5, 5, 5, 0.185);
+    border-radius: 5px;
+    margin-bottom: 10px;
 }

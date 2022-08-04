@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,57 @@
     <link rel="stylesheet" href="style.css">
     <title>CheckList Diário</title>
 </head>
-<body>
-  <main>
-    <div class="content">
-        <div class="content-img">
-            <img src="img/logo_TDGI_home_2.png" alt="TDGI">
-            <img style="height: 60px;" src="img/cropped-logo-tmkt-insta.png" alt="TMKT">
-        </div>
-         <div id="form">
-           <form action="">
-               <h2 class="title">CheckList Diário</h2>
-               <label for="">Data</label>
-               <div class="input">
-                   <input id="date" name="data" type="text">
-               </div>
-                   <label for="">Hora Inicio</label>
-                       <div class="input">
-                            <input id="timeone" name="timeone" type="time">
-                       </div>
-                       <label for="">Hora Término</label>
-                           <div class="input">
-                               <input id="timeend" name="timeend" type="time">
-                           </div>
-                           <label for="">Ass. Técnico</label>
-                               <div class="input">
-                                   <input id="assinatura" name="assinatura_tecnico" placeholder='Assinatura Técnico' type="text">
-                               </div>
-               <div id="btn"></div>
-                    <button type="submit">Enviar</button>
-               </form>
-    </div>
-      </div>
-   </main>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-  <script>
-    $(document).ready(function () { 
-        let data = $("#date");
-        
-        data.mask('00-00-0000');
-        
 
-    });
-</script>
+<body>
+    <main>
+        <div class="content">
+            <!-- Container imagens -->
+            <div class="content-img">
+                <img src="img/logo_TDGI_home_2.png" alt="TDGI">
+                <img style="height: 60px;" src="img/cropped-logo-tmkt-insta.png" alt="TMKT">
+            </div>
+            <!-- End Container imagens -->
+            <!-- Container form -->
+            <div id="form">
+                <form action="">
+                    <nav class="title-form">
+                        <h2 class="title">CheckList Diário</h2>
+                    </nav>
+                    <div class="input">
+                        <label for="">Data</label>
+                        <input id="date" name="data" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Hora Inicio</label>
+                        <input id="timeone" name="timeone" type="time">
+                    </div>
+                    <div class="input">
+                        <label for="">Hora Término</label>
+                        <input id="timeend" name="timeend" type="time">
+                    </div>
+                    <div class="input">
+                        <label for="">Ass. Técnico</label>
+                        <input id="assinatura" name="assinatura_tecnico" placeholder='Assinatura Técnico' type="text">
+                    </div>
+                    <div id="btn"></div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <!-- End Container form -->
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            let data = $("#date");
+
+            data.mask('00-00-0000');
+
+
+        });
+    </script>
 </body>
+
 </html>
