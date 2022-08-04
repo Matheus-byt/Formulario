@@ -9,13 +9,16 @@
 }
 
 main{
+
     background-color: white;
     width: 600px;
     padding: 10px;
     box-shadow: 5px 5px 15px #6492c09c;
     margin: auto;
+    margin-top: 10%;
     border-radius: 10px;
 }
+
 
 body{
     width: 100%;
