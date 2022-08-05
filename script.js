@@ -1,4 +1,4 @@
-const formValid = () => {
+/*const formValid = () => {
     addEventListener('click', function(event){
         console.log(event.target)
 
@@ -10,4 +10,4 @@ const formValid = () => {
     })
 }
 
-formValid()
+formValid()*/
