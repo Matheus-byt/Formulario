@@ -23,12 +23,18 @@ main {
     width: 500px;
     min-width: 320px;
     padding: 10px;
-    box-shadow: 15px 15px 15px #0e161dd8;
+    box-shadow: rgba(2px 2px 2px,.25);
     margin: auto;
     margin-top: 5%;
     border-radius: 10px;
     display: grid;
     justify-content: center;
+}
+
+@media (max-width: 750px){
+    .content{
+        margin-top: 25%;
+    }
 }
 
 .content-img {

@@ -1,13 +1,15 @@
-/*const formValid = () => {
-    addEventListener('click', function(event){
-        console.log(event.target)
+const formLogin = document.forms.formLogin
 
-        if(document.getElementById('timeone').value == ''){
+const formValid = () => {
+    addEventListener('submit', function(event){
+        const {data, timeone, timeend, assinatura_tecnico} = formLogin
+
+        if(data.value, timeone.value, timeend.value, assinatura_tecnico.value == ''){
             event.preventDefault()
-            this.alert('Preencha todos os campos')
+            console.log('todos os campos vázios')
         }
 
     })
 }
 
-formValid()*/
+formValid()
